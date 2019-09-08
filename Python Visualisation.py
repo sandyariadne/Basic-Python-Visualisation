@@ -1,17 +1,20 @@
 import pandas as pd
 
 df = pd.DataFrame(
-[
-    ["surabaya", 120, 60],
-    ["surabaya", 200, 20],
-    ["surabaya", 220, 40],
-    ["jakarta", 290, 30],
-    ["jogja", 290, 30],
-    ["solo", 190, 20],
-    ["padang", 170, 40],
-    ["lampung", 230, 78],
-], columns = ["kota", "angka1", "angka2"]
-)
+    [
+        ["surabaya", 120, 60],
+        ["jakarta", 290, 30],
+        ["jogja", 290, 30],
+        ["bandung", 190, 20],
+        ["lampung", 170, 40],
+        ["padang", 230, 78],
+        ["padang", 100, 120],
+        ["padang", 120, 130],
+        ["padang", 300, 300],
+        ["denpasar", 130, 20],
+        ["denpasar", 130, np.NaN],
+    ], columns = ["kota", "angka1", "angka2"]
+    )
 
 # Pandas Veez
 df.plot.scatter(x='angka1', y='angka2', title='scatter_plot')
